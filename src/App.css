@@ -1,10 +1,29 @@
-.custom-gradient {
-  background-image: linear-gradient(to bottom, 
-    #ef4444,  
-    #3b82f6,  
-    #10b981,  
-    #f59e0b,  
-    #8b5cf6   
-  );
+
+.notebook {
+  background-color: white;
+
 }
+
+.notebook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7%; 
+  width: 2px;
+  background-color: red;
+}
+
+.notebook::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.034) 19px, #d1d5db 20px); 
+  background-size: 100% 20px; 
+  pointer-events: none; 
+}
+
 
