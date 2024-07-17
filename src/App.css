@@ -1,29 +1,21 @@
-
 .notebook {
-  background-color: white;
-
+  background-color: #f5deb3; 
+  background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+  border: 1px solid #53483a; 
+  box-shadow: inset 10px 10px 60px rgba(0, 0, 0, 0.7); 
+  -webkit-mask-image: url('nosso.svg');
+  mask-image: url('nosso.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center; 
 }
 
-.notebook::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 7%; 
-  width: 2px;
-  background-color: red;
-}
 
-.notebook::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.034) 19px, #d1d5db 20px); 
-  background-size: 100% 20px; 
-  pointer-events: none; 
-}
+
+
+
 
 

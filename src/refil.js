@@ -3,16 +3,16 @@ import './App.css';
 import { useScroll, useTransform, motion } from 'framer-motion';
 
 const sections = [
-  { id: 1, title: "NFe", rotateFrom: 0, rotateTo: -3 },
-  { id: 2, title: "NFSe", rotateFrom: 0, rotateTo: 3 },
-  { id: 3, title: "CTe", rotateFrom: 0, rotateTo: -4 },
-  { id: 4, title: "MDFe", rotateFrom: 0, rotateTo: 4 },
-  { id: 5, title: "SAT", rotateFrom: -10, rotateTo: 0 },
+  { id: 1, title: "Pyxis", rotateFrom: 0, rotateTo: -3 },
+  { id: 2, title: "Kozo", rotateFrom: 0, rotateTo: 3 },
+  { id: 3, title: "Schneider", rotateFrom: 0, rotateTo: -4 },
+  { id: 4, title: "Remy", rotateFrom: 0, rotateTo: 4 },
+  { id: 5, title: "Darcell", rotateFrom: -10, rotateTo: 0 },
   { id: 6, title: "Cupom", rotateFrom: 0, rotateTo: 1 },
-  { id: 7, title: "eSocial", rotateFrom: 0, rotateTo: -1 },
-  { id: 8, title: "Reinf", rotateFrom: 0, rotateTo: 3 },
-  { id: 9, title: "GFIP", rotateFrom: 0, rotateTo: -3 },
-  { id: 10, title: "SEFIP", rotateFrom: -4, rotateTo: 0 }
+  { id: 7, title: "Ernesto", rotateFrom: 0, rotateTo: -1 },
+  { id: 8, title: "Oni", rotateFrom: 0, rotateTo: 3 },
+  { id: 9, title: "Silverhand", rotateFrom: 0, rotateTo: -10 },
+  { id: 10, title: "Nighthill", rotateFrom: -4, rotateTo: 0 }
 ];
 
 
@@ -24,7 +24,7 @@ function App() {
   });
 
   return (
-    <main ref={container} className="relative h-[1000vh] bg-[darkgoldenrod]">
+    <main ref={container} className="relative h-[1000vh] bg-[#3b301b] ">
       {sections.map((section, index) => (
         <Section
           key={section.id}
