@@ -1,19 +1,21 @@
 import { useRef } from 'react';
 import './App.css';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import pirata from './pirata.jpg'
 
 const sections = [
-  { id: 1, title: "Pyxis", rotateFrom: 0, rotateTo: -3 },
-  { id: 2, title: "Kozo", rotateFrom: 0, rotateTo: 3 },
-  { id: 3, title: "Schneider", rotateFrom: 0, rotateTo: -4 },
-  { id: 4, title: "Remy", rotateFrom: 0, rotateTo: 4 },
-  { id: 5, title: "Darcell", rotateFrom: -10, rotateTo: 0 },
-  { id: 6, title: "Cupom", rotateFrom: 0, rotateTo: 1 },
-  { id: 7, title: "Ernesto", rotateFrom: 0, rotateTo: -1 },
-  { id: 8, title: "Oni", rotateFrom: 0, rotateTo: 3 },
-  { id: 9, title: "Silverhand", rotateFrom: 0, rotateTo: -10 },
-  { id: 10, title: "Nighthill", rotateFrom: -4, rotateTo: 0 }
+  { id: 1,  img:pirata, title: "Pyxis", rotateFrom: 0, rotateTo: -3, forca: "Texto para Pyxis", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 2,  img:"", title: "Kozo", rotateFrom: 0, rotateTo: 3, forca: "Texto para Kozo", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 3,  img:"", title: "Schneider", rotateFrom: 0, rotateTo: -4, forca: "Texto para Schneider", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 4,  img:"", title: "Runara", rotateFrom: 0, rotateTo: 1, forca: "Texto para Cupom", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 5,  img:"", title: "Remy", rotateFrom: 0, rotateTo: 4, forca: "Texto para Remy", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 6,  img:"", title: "Darcell", rotateFrom: -10, rotateTo: 0, forca: "Texto para Darcell", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 7,  img:"", title: "Ernesto", rotateFrom: 0, rotateTo: -1, forca: "Texto para Ernesto", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 8,  img:"", title: "Oni", rotateFrom: 0, rotateTo: 3, forca: "Texto para Oni", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 9,  img:"", title: "Silverhand", rotateFrom: 0, rotateTo: -6, forca: "Texto para Silverhand", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 10, img:"", title: "Nighthill", rotateFrom: -4, rotateTo: 0, forca: "Texto para Nighthill", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" }
 ];
+
 
 
 function App() {
@@ -45,10 +47,40 @@ const Section = ({ scrollYProgress, index, section }) => {
   const rotate = useTransform(scrollYProgress, [start, end], [section.rotateFrom, section.rotateTo]);
 
   return (
-    <motion.div style={{ scale, rotate }} className='sticky top-0 h-screen text-blue-800 flex flex-col items-center justify-center pb-[10vh] notebook shadow-lg text-4xl'>
-      {section.title}
+    <motion.div style={{ scale, rotate }} className='sticky top-0 h-screen text-orange-950 flex flex-col items-center justify-center pb-[10vh] notebook shadow-lg text-4xl'>
+      <div className='flex flex-row gap-1 w-full h-full p-2'>
+        <div className='flex-1 flex justify-center items-center text-center'>
+          <img src={section.img} className='w-full h-full object-cover rounded' />
+        </div>
+
+        <div className='flex flex-col flex-1 pt-40'>
+          <div className=' flex-1'>
+            {section.title}
+          </div>
+
+          <div className=' flex-1'>
+            {section.forca}
+          </div>
+
+          <div className=' flex-1'>
+            {section.fraq}
+          </div>
+
+          <div className=' flex-1'>
+            {section.destino}
+          </div>
+
+          <div className=' flex-1'>
+            {section.hist}
+          </div>
+          <div className=' flex-1'>
+            {section.equip}
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 };
 
 export default App;
+
