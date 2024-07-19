@@ -4,7 +4,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import pirata from './pirata.jpg'
 
 const sections = [
-  { id: 1,  img:pirata, title: "Pyxis", rotateFrom: 0, rotateTo: -3, forca: "Texto para Pyxis", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 1,  img:pirata, title: "Pyxis", rotateFrom: 0, rotateTo: -3, forca: "Inventivo; curioso; máquinas perigosas", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 2,  img:"", title: "Kozo", rotateFrom: 0, rotateTo: 3, forca: "Texto para Kozo", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 3,  img:"", title: "Schneider", rotateFrom: 0, rotateTo: -4, forca: "Texto para Schneider", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 4,  img:"", title: "Runara", rotateFrom: 0, rotateTo: 1, forca: "Texto para Cupom", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
