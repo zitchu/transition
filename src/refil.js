@@ -1,17 +1,23 @@
 import { useRef } from 'react';
 import './App.css';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import oni from './oni.jfif'
+import ernesto from './ernesto.jfif'
+import kozo from './kozo.jfif'
+import pyxis from './pyxis.jfif'
+import remy from './remy.jfif'
+import darcell from './darcell.jfif'
 import pirata from './pirata.jpg'
 
 const sections = [
-  { id: 1,  img:pirata, title: "Pyxis", rotateFrom: 0, rotateTo: -3, forca: "Inventivo; curioso; máquinas perigosas", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
-  { id: 2,  img:"", title: "Kozo", rotateFrom: 0, rotateTo: 3, forca: "Texto para Kozo", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 1,  img:pyxis, title: "Pyxis", rotateFrom: 0, rotateTo: -3, forca: "Inventivo; curioso; máquinas perigosas", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 2,  img:kozo, title: "Kozo", rotateFrom: 0, rotateTo: 3, forca: "Texto para Kozo", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 3,  img:"", title: "Schneider", rotateFrom: 0, rotateTo: -4, forca: "Texto para Schneider", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 4,  img:"", title: "Runara", rotateFrom: 0, rotateTo: 1, forca: "Texto para Cupom", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
-  { id: 5,  img:"", title: "Remy", rotateFrom: 0, rotateTo: 4, forca: "Texto para Remy", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
-  { id: 6,  img:"", title: "Darcell", rotateFrom: -10, rotateTo: 0, forca: "Texto para Darcell", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
-  { id: 7,  img:"", title: "Ernesto", rotateFrom: 0, rotateTo: -1, forca: "Texto para Ernesto", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
-  { id: 8,  img:"", title: "Oni", rotateFrom: 0, rotateTo: 3, forca: "Texto para Oni", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 5,  img:remy, title: "Remy", rotateFrom: 0, rotateTo: 4, forca: "Texto para Remy", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 6,  img:darcell, title: "Darcell", rotateFrom: -10, rotateTo: 0, forca: "Texto para Darcell", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 7,  img:ernesto, title: "Ernesto", rotateFrom: 0, rotateTo: -1, forca: "Texto para Ernesto", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
+  { id: 8,  img:oni, title: "Oni", rotateFrom: 0, rotateTo: 3, forca: "Texto para Oni", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 9,  img:"", title: "Silverhand", rotateFrom: 0, rotateTo: -6, forca: "Texto para Silverhand", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" },
   { id: 10, img:"", title: "Nighthill", rotateFrom: -4, rotateTo: 0, forca: "Texto para Nighthill", fraq: "texto fraq", destino:"destino", hist: "historico", equip: "equip" }
 ];
