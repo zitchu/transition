@@ -1,14 +1,16 @@
 * {
-  margin: 0;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .notebook {
   height: 100vh;
-  background-color: #f5deb3; 
-  background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
-  border: 1px solid #53483a; 
-  box-shadow: inset 10px 10px 60px rgba(0, 0, 0, 0.7); 
-/*   -webkit-mask-image: url('nosso.svg');
+  background-color: #f5deb3;
+  background-image: url("https://www.transparenttextures.com/patterns/old-mathematics.png");
+  border: 1px solid #53483a;
+  box-shadow: inset 10px 10px 60px rgba(0, 0, 0, 0.7);
+  /*   -webkit-mask-image: url('nosso.svg');
   mask-image: url('nosso.svg');
   -webkit-mask-size: contain;
   mask-size: contain;
@@ -17,10 +19,3 @@
   -webkit-mask-position: center;
   mask-position: center;  */
 }
-
-
-
-
-
-
-
